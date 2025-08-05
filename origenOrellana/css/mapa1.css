@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.ctnd_game{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.ctnd_cabecera{
+    background-color: #000;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.titulo{
+    color: #fff;
+    position: absolute;
+    left: 20px;
+}
+
+.game_info{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+.game_info p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.game_info span{
+    color: rgb(194, 0, 219);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ctnd_area{
+    background-color: gray;
+    width: 100%;
+    height: 82vh;
+}
+
+canvas{
+    width: 100%;
+    max-height: 100%;
+}
+
+.ctnd_controles{
+    background-color: black;
+    width: 20%;
+    height: 50vh;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    border: 4px solid rgb(194, 0, 219);
+    border-radius: 30px;
+    transform: translateY(-1vh);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.abierto{
+    transform: translateY(-52vh);
+}
+
+.ctnd_top_controls{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+}
+
+.ctnd_top_controls h2{
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+
+
+.ctnd_botones{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+.ctnd_botones button{
+    background-color: #000;
+    color: #fff;
+    width: 40px;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+
+.ctnd_botones button:hover{
+   color: rgb(194, 0, 219);
+}
+
+.ctnd_controles p{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.pie_pagina{
+    background-color: #000;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie_pagina p{
+    color: #fff;
+}
